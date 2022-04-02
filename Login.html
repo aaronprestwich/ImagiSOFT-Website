@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImagiSOFT, Inc - Login</title>
-    <!-- Footer Center -->
-    <style>footer{text-align: center;}</style>
-    <!-- Form and input Center -->
-    <style>form{text-align: center};</style>
-    <style>input{text-align: center;}</style>    
+    <title>ImagiSOFT, Inc - Login</title>    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <br>
     <!-- Navigation Menu -->
-    <div>
-        <a href="Home.html">Home</a>
-        <a href="Login.html">Login</a>
-        <a href="Order.html">Order</a>
+    <div class="menu">        
+        <a class="grey-box" href="Home.html">Home</a>
+        <a id="grey-select" href="Login.html">Login</a>
+        <a class="grey-box" href="Order.html">Order</a>
     </div>
     
     <!-- Center Image 3 -->
-    <p style="text-align: center;"><img src="PoweredBy.png" alt="Powered By ImagiSOFT" class="center"></p><br>
+    <img class="center" src="ImagiLogo.gif"alt="ImagiSOFT"><br>
     <!-- Header size 2 -->
-    <h2 style="text-align: center;">Login</h2>    
+    <h2 class="text-center">Login</h2>    
     <br> 
-    <!-- Login information Form -->
-    <form>
-        <input type="text" username="username" placeholder="User Name"><br>
-        <input type="text" password="password" placeholder="Password"><br><br>        
-        <input type="submit" value="Submit"><br>
-    </form>
-    
+    <!-- Login information Form found how to from https://www.w3schools.com/howto/howto_css_login_form.asp-->
+    <form>        
+        <div class="light-box">
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required><br>
+      
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+      
+          <button class="login" type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+          <span class="password">Forgot <a href="">password?</a></span>
+        </div>         
+    </form>      
 </body>
 <br><br>
 <footer>

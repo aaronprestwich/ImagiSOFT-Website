@@ -1,0 +1,150 @@
+/* Styles on every page */
+.menu{    
+    text-align: center;
+    background-color: rgb(40,40,40);
+    border-style: groove;
+    border-bottom-color: black;
+    border-bottom-left-radius: 50%;
+    border-width: 3px;
+    border-color: black;    
+    height: 70px;
+    padding-top:35px;
+    
+}
+/* font set in body */
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif    
+}
+footer{
+    font-size: medium;
+    color: rgb(150,150,150);    
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    height: 100px; 
+    padding: 1px 0px 30px 0px;   
+}
+/* Navigation Menu
+grey box are the menu selections
+grey-select shows which menu button you are currently on */
+#grey-select{
+    background-color: rgb(150,150,150);
+    border-style: ridge;
+    border-radius: 10%;
+    border-width: 3px;
+    border-color:grey;
+    font-size: large;
+    color: rgb(40, 40, 40);
+    text-decoration: dotted;
+    text-align: center;
+    padding: 3px;    
+    margin-right:-5px;
+}
+.grey-box{    
+    background-color: rgb(40,40,40);
+    border-style: ridge;
+    border-radius: 10%;
+    border-width: 3px;
+    border-color:grey;
+    font-size: large;
+    color: rgb(252, 252, 252);
+    text-decoration: dotted;
+    text-align: center;    
+    padding:3px;    
+    margin-right:-5px;
+}
+.grey-box:hover{
+    background-color: rgb(252,252,252);   
+    color: rgb(40, 40, 40);   
+    top: 50%;
+}
+/* Position center */
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align:left;
+}
+img.center{
+    position: relative;    
+    left: 50%; 
+    transform: translateX(-50%);
+}
+img.off-center{
+    position: relative;
+    left:50%;
+    transform: translateX(-25%)
+}
+/* Centers list with bullet points on Home page */
+ul{      
+    border-style: solid;
+    padding: 1px 30px;
+    position: relative; 
+    display: inline-block;    
+    left: 50%; 
+    transform: translateX(-50%); 
+} 
+/* Black text used with list */
+.text-black{
+    color: rgb(40, 40, 40);
+    cursor: pointer;
+}
+.text-black:hover{
+    color: rgb(150,150,150);
+    padding-top: 1%;
+}
+
+/* Login information page */
+div.light-box {
+    border: 3px solid rgb(240, 240, 240);
+    padding: 16px;
+}
+input[type=text], input[type=password]{   
+    border: 1px solid rgb(200,200,200); 
+    padding: 12px 20px;    
+    box-sizing: border-box;   
+    display: inline-block;
+    margin: 8px 0px;   
+    width: 100%;
+}  
+button.login {
+    background-color: rgb(150,150,150);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px;    
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Forgot password */
+span.password {
+    float: right;    
+}
+/* Table Border on Order Page */
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+th{    
+    background-color: rgb(150, 150, 150);    
+}  
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+}  
+/* Buy now button on Order Page */
+input.buy {
+    width: auto;
+    padding: 5px 40px;
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+input.buy:hover{
+    color: rgb(54, 11, 0);
+    opacity: 0.8;
+}  
+  
+  
